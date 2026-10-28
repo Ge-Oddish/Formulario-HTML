@@ -1,0 +1,49 @@
+<!--
+Descricao: Desenvolvimento Web - Introdução aos Formulários Web
+nome_arquivo: index.html
+nome_exercicio: Aula 12 - Introdução aos Formulários Web
+nome_aluno: Geovana Ramos Pereira
+email_aluno: geovana.pereira8@aluno.cps.sp.gov.br
+turma: WEBI-ISW028-A
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <main>
+        <h1>Bem-vindo(a)!</h1>
+        <p class="subtitulo">Entre com seu e-mail e sua senha.</p>
+
+        <form id="formLogin" novalidate>
+            <div class="linha">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="seuemail@exemplo.com">
+            </div>
+            <span class="erro" id="erroEmail"></span>
+
+            <div class="linha">
+                <label for="senha">Senha:</label>
+                <div class="campo-senha">
+                    <input type="password" id="senha" placeholder="Digite sua senha">
+                    <button type="button" id="verSenha">Mostrar</button>
+                </div>
+            </div>
+            <span class="erro" id="erroSenha"></span>
+
+            <p class="esqueci"><a href="#" id="esqueci">Esqueci minha senha</a></p>
+
+            <button type="submit" class="botao-entrar">Entrar</button>
+            <p class="sucesso" id="sucesso"></p>
+        </form>
+
+        <p class="cadastro">Ainda não tem conta? <a href="#" id="cadastro">Cadastre-se</a></p>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>

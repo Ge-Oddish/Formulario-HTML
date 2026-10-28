@@ -1,0 +1,165 @@
+/*
+Descricao: Desenvolvimento Web - Introdução aos Formulários Web
+nome_arquivo: styles.css
+nome_exercicio: Aula 12 - Introdução aos Formulários Web
+nome_aluno: Geovana Ramos Pereira
+email_aluno: geovana.pereira8@aluno.cps.sp.gov.br
+turma: WEBI-ISW028-A
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #010B12;
+    color: #DAF7CC;
+    margin: 0;
+    padding: 30px;
+}
+
+main {
+    background-color: #031F30;
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    border: 3px solid #CC57DE;
+    box-shadow: 0 0 20px rgba(204, 87, 222, 0.4);
+}
+
+h1 {
+    text-align: center;
+    color: #DAF7CC;
+    text-shadow: 0 0 10px rgba(218, 247, 204, 0.5);
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #F6B1B2;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+label {
+    width: 70px;
+    font-weight: bold;
+    color: #DAF7CC;
+    font-size: 14px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    background-color: #010B12;
+    border: 2px solid #CC57DE;
+    border-radius: 12px;
+    font-size: 14px;
+    outline: none;
+    color: #DAF7CC;
+}
+
+input:focus {
+    border-color: #F6B1B2;
+    box-shadow: 0 0 8px rgba(246, 177, 178, 0.6);
+}
+
+input.invalido {
+    border-color: #FF4D4D;
+    box-shadow: 0 0 8px rgba(255, 77, 77, 0.6);
+}
+
+.campo-senha {
+    flex: 1;
+    display: flex;
+    gap: 6px;
+}
+
+#verSenha {
+    background-color: #CC57DE;
+    color: #010B12;
+    border: none;
+    border-radius: 10px;
+    padding: 0 12px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(204, 87, 222, 0.5);
+}
+
+#verSenha:hover {
+    background-color: #DAF7CC;
+}
+
+.erro {
+    display: block;
+    margin-left: 70px;
+    margin-top: 6px;
+    color: #FF4D4D;
+    font-weight: bold;
+    font-size: 12px;
+    min-height: 14px;
+    text-shadow: 0 0 6px rgba(255, 77, 77, 0.5);
+}
+
+.esqueci {
+    text-align: right;
+    margin: 10px 0 20px 0;
+    font-size: 13px;
+}
+
+a {
+    color: #F6B1B2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #DAF7CC;
+    text-shadow: 0 0 8px rgba(218, 247, 204, 0.8);
+    text-decoration: underline;
+}
+
+.botao-entrar {
+    width: 100%;
+    padding: 12px;
+    background-color: #CC57DE;
+    color: #010B12;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(204, 87, 222, 0.6);
+}
+
+.botao-entrar:hover {
+    background-color: #DAF7CC;
+    box-shadow: 0 0 20px rgba(218, 247, 204, 0.8);
+}
+
+.sucesso {
+    text-align: center;
+    color: #DAF7CC;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 14px;
+    text-shadow: 0 0 8px rgba(218, 247, 204, 0.6);
+}
+
+.cadastro {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 2px dashed #CC57DE;
+    font-size: 13px;
+    color: #F6B1B2;
+}
